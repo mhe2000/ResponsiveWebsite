@@ -1,0 +1,183 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+/* the * is used to apply a style to all of the html on the page */
+header{
+	height: 450px;
+	background: #ccc;
+	background-image: url(images/bg.jpg);
+	background-size: cover; /* stretches the whole picture to cover the area, no repeat */
+	opacity: 0.8; /* makes the image less opaque/lighter */
+}
+
+a{
+	display: inline;
+	margin-left: 20px;
+	font-weight: 700; /* text thickness */
+	text-transform: uppercase; /* text appears in all uppercase */
+	color: white;
+	text-decoration: none; /* removes the line from under the link */
+}
+
+nav{
+	float: right;
+	margin: 30px 30px 0 0; /* top, right, bottom, left */
+}
+
+nav:hover{
+	color: rgba(0, 0, 0, 1);
+
+}
+
+h1{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 700; /* text thickness */
+	color: white;
+	text-transform: uppercase; /* text appears in all uppercase */
+	letter-spacing: 0.05em; /* space between each letter */
+	margin-bottom: 20px;
+	clear: both; /* moves the h1 box down in the header so it doesn't cover the icon/navigation */
+	padding-top: 110px; /*space between the white box outline and navigation text */
+}
+
+span{ /* <span></span> tag is used an element you want to add a separate style to */
+	display: inline-block; /* creats a box around the text */
+	padding: 0.2em 0.5em; /* first number is the space of the horizonal lines from the text of rectancle box, 2nd number is vertical lines */
+	border: white solid 10px;
+}
+
+.kicker{
+	text-align: center;
+	font-weight: 700; /* text thickness */
+	text-transform: uppercase; /* text appears in all uppercase */
+	letter-spacing: 0.1em; /* space between each letter */
+	color: white;
+	line-height: 1;
+
+}
+
+h3{
+	color: #4D4D89;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.flex-container{
+	display: -webkit-flex;
+	max-width: 550px;
+	display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+     -webkit-justify-content: center;
+    justify-content: center;
+     -webkit-justify-content: space-around;
+    justify-content: space-around;
+    margin: auto;
+
+}
+
+@media screen and (max-width: 700px){
+	.flex-container{
+		display: block;
+		text-align: center;
+	}
+
+	.flex-item{
+		display: inline-block;
+	}
+
+	h1{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	nav{
+		align-content: center;
+	}
+} /*a way to get the layout to be responsive and act in a certain way when the screen is smaller, aka on a phone.*/
+	
+
+.flex-item {
+    -webkit-align-items: center;
+    align-items: center;
+     -webkit-justify-content: center;
+    justify-content: center;
+     -webkit-justify-content: space-around;
+    justify-content: space-around;
+    margin: auto;
+    opacity: 0.8;
+}
+
+.blurb{
+	max-width: 700px;
+	padding-bottom: 50px;
+	padding-left: 15px; /* this padding will help the words have space on smaller screen */
+	padding-right: 15px; /* this padding will help the words have space on smaller screen */
+	margin: 10px auto; /* centers the text in the screen */
+	text-align: center;
+	font-size: 24px;
+	font-weight: 300; /* this makes the font not look as thick */
+}
+
+.skill-lockup{
+	max-width: 800px;
+	margin: 10px auto;
+	color: #999;
+}
+
+.skill-unit{
+	width: 400px;
+	float: left; 
+}
+
+.skill-icons{
+	font-size: 0px;
+	margin: 0 0 30px;
+}
+
+.skill-icons span{
+	display: inline-block; /*this means they will stack in-line horizontal not stacked vertical8*/
+	height: 14px;
+	width: 14px;
+	margin-right: 0;
+	background-color: #999;
+	border-radius: 50%;
+}
+
+.skill-icons span:after{
+	content: "";
+	display: block;
+	height:10px;
+	width: 10px;
+	background: white;
+	border-radius: 50%;
+	margin: 2px;
+}/*the :action is used to have an event occur once an action is perfomed on that element*/
+
+footer{
+	height: 100px;
+	background: #ccc;
+	background-image: url(images/bg.jpg);
+	background-size: cover; /* stretches the whole picture to cover the area, no repeat */
+}
+
+.lockup{
+	padding: 10px 50px;
+}
+
+.content-wrap{
+	float: left;
+}
+
+.content-wrap img{
+	height: 145px;
+	background-size: cover;
+}
+
+.copyright{
+	text-transform: uppercase;
+	font-size: 12px;
+	color: white;
+	margin-right: 50px;
+}
